@@ -1,19 +1,57 @@
-# Node.js deps
-node_modules/   ✅ covers /node_modules in both frontend & backend
+# ---------------------
+# Node.js / JavaScript
+# ---------------------
+
+# Dependencies
+node_modules/
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
 
 # Build output
-dist/           ✅ covers /dist (frontend build)
-build/          ✅ also covers build outputs if you ever run CRA/Next.js
+dist/
+build/
 .cache/
 .next/
 out/
 
-# Vite-specific
-.vite/          ✅ same as your frontend .gitignore
+# Coverage reports
+coverage/
+*.lcov
 
 # Environment files
-.env            ✅ covers backend .env
+.env
 .env.local
-.env.*.local    ✅ covers variations too
+.env.*.local
 
-# Extra safety (logs, macOS .DS_Store, IDE settings, etc.)
+# ---------------------
+# macOS / System files
+# ---------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# ---------------------
+# IDE / Editor files
+# ---------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*.sw?
