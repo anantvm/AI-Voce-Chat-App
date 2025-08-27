@@ -1,0 +1,19 @@
+# Node.js deps
+node_modules/   ✅ covers /node_modules in both frontend & backend
+
+# Build output
+dist/           ✅ covers /dist (frontend build)
+build/          ✅ also covers build outputs if you ever run CRA/Next.js
+.cache/
+.next/
+out/
+
+# Vite-specific
+.vite/          ✅ same as your frontend .gitignore
+
+# Environment files
+.env            ✅ covers backend .env
+.env.local
+.env.*.local    ✅ covers variations too
+
+# Extra safety (logs, macOS .DS_Store, IDE settings, etc.)

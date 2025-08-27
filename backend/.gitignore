@@ -1,5 +1,0 @@
-# Node.js dependencies
-/node_modules
-
-# Sensitive information (crucial for security)
-.env

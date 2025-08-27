@@ -1,8 +1,0 @@
-# Node.js dependencies
-/node_modules
-
-# Build output
-/dist
-
-# Vite-specific
-.vite/
